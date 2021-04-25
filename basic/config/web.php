@@ -5,6 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'name'=>'Тестовое приложение',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log','gii'],
     'aliases' => [

@@ -9,6 +9,6 @@
 </div>
 <div>
   <strong>Текст сообщения:</strong><br>
-  <?=$model->text?>
+  <?=\yii\helpers\Html::encode($model->text)?>
 </div>
 
