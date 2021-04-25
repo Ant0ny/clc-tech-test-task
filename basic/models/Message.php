@@ -2,18 +2,42 @@
 
 namespace app\models;
 
-use yii\db\ActiveRecord;
+use Yii;
 
-class Message extends ActiveRecord
+/**
+ * This is the model class for table "message".
+ *
+ * @property int $id
+ * @property string|null $text
+ */
+class Message extends \yii\db\ActiveRecord
 {
-    public $id;
-    public $text;
-
     /**
-     * @return string название таблицы, сопоставленной с этим ActiveRecord-классом.
+     * {@inheritdoc}
      */
     public static function tableName()
     {
-        return '{{message}}';
+        return 'message';
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function rules()
+    {
+        return [
+            [['text'], 'string'],
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'text' => 'Текст сообщения',
+        ];
     }
 }

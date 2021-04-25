@@ -1,9 +1,14 @@
 <?php
 /* @var $this yii\web\View */
 ?>
-<h1>message/view</h1>
+<h1>Просмотр сообщения</h1>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
+<div>
+  <strong>ID собщения:</strong><br>
+  <?=$model->id?>
+</div>
+<div>
+  <strong>Текст сообщения:</strong><br>
+  <?=$model->text?>
+</div>
+

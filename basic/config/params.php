@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'adminEmail' => 'admin@example.com',
-    'senderEmail' => 'noreply@example.com',
-    'senderName' => 'Example.com mailer',
+    'api_key'      => '1793462646:AAHZvXgoUt9H7_g5Z6ecqsdUjMZh_-n9MlY',
+    'bot_username' => 'HipHopMessageBot',
 ];

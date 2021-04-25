@@ -1,9 +1,20 @@
 <?php
 /* @var $this yii\web\View */
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
 ?>
-<h1>message/create</h1>
+<h1>Создать сообщение</h1>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
+<div class="message-form">
+
+    <?php $form = ActiveForm::begin(); ?>
+
+    <?= $form->field($model, 'text')->textarea(['rows' => 6]) ?>
+
+    <div class="form-group">
+        <?= Html::submitButton('Отправить', ['class' => 'btn btn-success']) ?>
+    </div>
+
+    <?php ActiveForm::end(); ?>
+
+</div>
